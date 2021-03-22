@@ -1,19 +1,10 @@
-﻿using System;
-using System.Linq;
-using System.Net;
-using System.Net.Sockets;
-using System.Collections.Generic;
-using System.Reflection;
+﻿using System.Reflection;
 using BepInEx;
-using BepInEx.Configuration;
 using BepInEx.IL2CPP;
-using BepInEx.Logging;
 using Essentials.Options;
 using HarmonyLib;
 using Reactor;
 using Reactor.Patches;
-using UnityEngine;
-using Random = System.Random;
 
 namespace Glaucus
 {
