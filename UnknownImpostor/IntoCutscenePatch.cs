@@ -2,10 +2,10 @@
 
 namespace Glaucus
 {
-    [HarmonyPatch(typeof(IntroCutscene.CoBegin__d), nameof(IntroCutscene.CoBegin__d.MoveNext))]
+    [HarmonyPatch(typeof(IntroCutscene._CoBegin_d__11), nameof(IntroCutscene._CoBegin_d__11.MoveNext))]
     class IntroCutscenePath
     {
-        static bool Prefix(IntroCutscene.CoBegin__d __instance)
+        static bool Prefix(IntroCutscene._CoBegin_d__11 __instance)
         {
             if (PlayerControl.LocalPlayer.Data.IsImpostor && !UnknownImpostor.ImpostorsKnowEachother.GetValue())
             {
